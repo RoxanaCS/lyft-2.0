@@ -7,29 +7,64 @@
   background-position: center;
 }
 .logo-white{
-  width: 90%;
-  padding-top:60%;
+  width: 22em;
+  padding-top:48%;
+  padding-bottom:48%;
+  padding-left: 20%;
 }
 .btn-init{
-  margin-top: 110%;
+  margin-top: 32em;
+  margin-bottom: 2em;
   padding: 1em;
   margin-left: 20%;
+  background-color: transparent;
+  border: 0.1em solid #ffff;
+  color: #ffff;
+  font-weight: bold;
 }
-.btn-color{
+.glyphicon-chevron-left{
+  font-size: 2em;
+  color: #AB0375;
+  margin-top: 1em;
+}
+.subparrafo{
+  margin-top: 0.5em;
+  margin-bottom: 4em;
+}
+.btn-resend{
+  margin-bottom: 15em;
   background-color: grey;
+  color: #fff;
 }
-.btn-color2{
-  background-color: pink;
+.centrado{
+  display: flex;
+  justify-content: center;
 }
-.btn-codigo{
+.checkbox{
+  margin-bottom: 14em;
+}
+.input2{
+  margin-top: 1em;
+}
+.btn-color, .btn-codigo, .btn-form{
   background-color: grey;
+  color: #ffff;
 }
-.btn-codigo2{
-  background-color: pink;
+.btn-color2, .btn-codigo2, .btn-form2{
+  background-color: #AB0375;
+  color: #ffff;
 }
-.btn-form {
-  background-color: grey;
+.approved{
+  background: linear-gradient(#530060, #BF087F);
 }
-.btn-form2 {
-  background-color: pink;
+.chuck{
+  width: 6em;
+  margin-left: 10em;
+  margin-bottom: 2em;
+}
+.logo-white2{
+  width: 20em;
+  margin-top:42%;
+  margin-bottom:15%;
+  margin-left: 15%;
 }

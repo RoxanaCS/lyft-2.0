@@ -6,45 +6,35 @@ $(document).ready(function(){
    }, 1000);
   });
   $(function(){
-  setTimeout(function() {
-    $('.first-screen').removeClass('hidden');
-  }, 2000);
+    setTimeout(function() {
+      $('.first-screen').removeClass('hidden');
+    }, 1000);
   });
   $('#btn-singup').click(function(){
     $('.first-screen').addClass('hidden');
     $('.formulario').removeClass('hidden');
-
   });
   //banderitas
   $("#demo").intlTelInput();
-  //rescatar el valor del Input y que sean sólo números
+  //cambiar el boton de color
   $('#demo').keydown(function(){
-    var inputVal = $("#demo").val();
-    //console.log(inputCont);
-    if(event.keyCode>=48 && event.keyCode<=57 || event.keyCode==8){
-      console.log(event.keyCode);
-      var inputCont = $("#demo").val().length;
-    } else {
-      alert("Ingrese un número válido");
-    }
-    //cambiar el boton de color
+    var inputCont = $("#demo").val().length;
     if(inputCont==9){
       $('.btn-color').addClass('btn-color2');
     }
     else{
       $('.boton').removeClass('btn-color2');
     }
-  })
+  });
   //al hacer click al boton que se muestre un alert
   $('.boton').click(function(){
     if ($(this).hasClass('btn-color2')){
-      //alert('Tu código:LAB-' + code());
-
-    if(confirm('Tu código:LAB-' + code()))
-    {
-      $('.formulario').addClass('hidden');
-      $('.codigo').removeClass('hidden');
-    }}
+    //alert('Tu código:LAB-' + code());
+      if(confirm('Tu código:LAB-' + code())){
+        $('.formulario').addClass('hidden');
+        $('.codigo').removeClass('hidden');
+      }
+    }
   })
   //funcion que arroja el codigo ramdom
   function code(){
@@ -77,7 +67,7 @@ $(document).ready(function(){
       $('.formulario2').removeClass('hidden');
     }
   })
-
+  //cambiar el color del botón
   $('input[type=checkbox]').click(function(){
     if($(this).is(':checked')){
       $('.btn-form').addClass('btn-form2');
@@ -86,7 +76,14 @@ $(document).ready(function(){
       $('.btn-form').removeClass('btn-form2');
     }
   })
-  //volver a la vista anterior
+  //pasar a la última pantalla
+  $('.btn-form').click(function(){
+    if ($(this).hasClass('btn-form2')){
+    $('.formulario2').addClass('hidden');
+    $('.approved').removeClass('hidden');
+   }
+  })
+  //volver a la vista anterior con las flechitas
   $('#section1').click(function(){
       $('.formulario').addClass('hidden');
       $('.first-screen').removeClass('hidden');
@@ -95,5 +92,8 @@ $(document).ready(function(){
       $('.formulario').removeClass('hidden');
       $('.codigo').addClass('hidden');
   })
-  //SEGUIR HACIENDO
+  $('#section3').click(function(){
+      $('.codigo').removeClass('hidden');
+      $('.formulario2').addClass('hidden');
+  })
 })
