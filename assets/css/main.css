@@ -2,23 +2,34 @@
   background: linear-gradient(#530060, #BF087F);
 }
 .first-screen{
-  background-image: url(../images/taxi.jpg);
+  background-image: url(../images/back.png);
   background-size:cover;
-  background-position: bottom;
+  background-position: center;
 }
 .logo-white{
   width: 90%;
+  padding-top:60%;
 }
-.logo-pink{
-
-  text-align: center;
-}
-.logo-pink2{
-  padding-left: 4em;
+.btn-init{
+  margin-top: 110%;
+  padding: 1em;
+  margin-left: 20%;
 }
 .btn-color{
   background-color: grey;
 }
 .btn-color2{
+  background-color: pink;
+}
+.btn-codigo{
+  background-color: grey;
+}
+.btn-codigo2{
+  background-color: pink;
+}
+.btn-form {
+  background-color: grey;
+}
+.btn-form2 {
   background-color: pink;
 }
